@@ -1,3 +1,6 @@
+/*
+WAP to add two 3 by 3 matrix and display the transpose of the resulting matrix
+*/
 #include<iostream>
 using namespace std;
 

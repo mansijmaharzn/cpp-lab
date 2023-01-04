@@ -1,3 +1,4 @@
+// WAP to search a number from a set of numbers(array)
 #include<iostream>
 using namespace std;
 
