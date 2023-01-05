@@ -6,7 +6,7 @@ int checker(int num);
 
 int main() {
     int num;
-    float result;
+    bool result;
 
     cout << "Enter Number to check Palindrome: " << endl;
     cin >> num;
