@@ -1,4 +1,3 @@
-## cpp-lab
 # Still gay if not starred 😎
 
 ### Downloading
