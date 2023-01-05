@@ -10,4 +10,4 @@ git clone https://github.com/mansijmaharzn/cpp-lab
 git pull
 ```
 
-> Fork and send PR to contribute 🤪
+> Send a PR to contribute 🤪
