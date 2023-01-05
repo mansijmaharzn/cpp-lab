@@ -25,7 +25,6 @@ int main() {
 
 int checker(int num) {
     int digit, rem=0, temp;
-    float result;
 
     temp = num;
 
