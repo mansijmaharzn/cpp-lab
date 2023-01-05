@@ -2,7 +2,7 @@
 WAP to find the root of a quadratic equation
 
 This one is by Bahadur bhai
-He names functions like passwords ;-;
+He name functions like passwords ;-;
 */
 #include<iostream>
 #include<math.h>
