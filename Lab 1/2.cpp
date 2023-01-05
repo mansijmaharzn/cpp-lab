@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int checker(int n);
+int checker(int num);
 
 int main() {
     int num;
