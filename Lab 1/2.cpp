@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int checker(int num);
+bool checker(int num);
 
 int main() {
     int num;
@@ -23,7 +23,7 @@ int main() {
 }
 
 
-int checker(int num) {
+bool checker(int num) {
     int digit, rem=0, temp;
 
     temp = num;
