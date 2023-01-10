@@ -25,7 +25,7 @@ int main() {
     cout << "Displaying set after addition" << endl;
     displaySet(sumSet);
 
-    cout << "Transpoing added set...";
+    cout << "Transposing added set...";
     transposeSet(sumSet, transSet);
     cout << "Displaying transposed set..." << endl;
     displaySet(transSet);
