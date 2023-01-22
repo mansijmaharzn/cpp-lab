@@ -1,2 +1,3 @@
-# Ignore files with extension `.exe`
+# Ignore files with extension `.exe` and `.out`
 *.exe
+*.out
