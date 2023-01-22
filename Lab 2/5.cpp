@@ -7,7 +7,7 @@ Default tax rate = 15%
 #include<iostream>
 using namespace std;
 
-bool checkTaxable(char mStatus, int salary) {
+bool checkTaxable(int mStatus, int salary) {
     if (mStatus == 0) { // unmarried
         if (salary <= 350000) // not taxable
             return false;

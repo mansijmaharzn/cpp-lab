@@ -9,7 +9,6 @@ inline double convertToCel(double inTemp) {
 }
 
 int main() {
-    int i;
     double fahren;
 
     cout << "Enter a Fahrenheit temperature: ";
