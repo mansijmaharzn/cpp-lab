@@ -38,7 +38,7 @@ class Account {
 
         void withdraw(double amt) {
             // checking if the object has sufficient balance, then withdrawing
-            if (balance > amt) {
+            if (balance >= amt) {
                 balance -= amt;
                 cout << "Successfully withdrew Rs." << amt << endl;
             } else {
