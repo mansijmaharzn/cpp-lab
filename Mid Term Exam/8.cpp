@@ -78,6 +78,7 @@ int main() {
                 break;
 
             case 4:
+                cout << "Exiting..."; 
                 status = false;
                 break;
 
