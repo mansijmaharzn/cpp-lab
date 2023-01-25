@@ -42,7 +42,7 @@ class Account {
                 balance -= amt;
                 cout << "Successfully withdrew Rs." << amt << endl;
             } else {
-                cout << "Sorry, not enough balance in your account!";
+                cout << "Sorry, not enough balance in your account!" << endl;
             }
         }
 };
@@ -83,7 +83,7 @@ int main() {
                 break;
 
             default:
-                cout << "Invalid Input!";
+                cout << "Invalid Input!" << endl;
                 break;
         }
     }
