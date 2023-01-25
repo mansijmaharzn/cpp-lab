@@ -56,7 +56,7 @@ int main() {
     Account account("Mansij Maharjan", "Saving", 69696969, 100);
 
     while (status) {
-        cout << "What do you want to do:\n1. Check balance\n2. Deposit\n3. Withdraw\n4. Exit" << endl;
+        cout << "\nWhat do you want to do:\n1. Check balance\n2. Deposit\n3. Withdraw\n4. Exit" << endl;
         cout << "> ";
         cin >> choice;
 
