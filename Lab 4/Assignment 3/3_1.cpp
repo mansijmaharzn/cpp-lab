@@ -43,6 +43,8 @@ int main() {
     cout << "Enter 2nd time detail" << endl;
     t2.getTime();
 
+    // laaj lagdaina hai khuru khuru sarna matra? star chai dina chaina
+
     t3.sum(t1, t2);
     cout << "The sum of two times are" << endl;
     t3.display();
