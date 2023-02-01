@@ -11,6 +11,7 @@ class Time {
     int hr, min, sec;
 
     public:
+        // constructor overloading wala objective ho so tie use garera gareko
         Time() {
             hr = 1; min = 59; sec = 60; // initialized 2hr
         }
