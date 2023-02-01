@@ -2,14 +2,12 @@
 #include<iostream>
 using namespace std;
 
-// int count = 0;
 
 class contdest {
-    static int count;
-
     public:
+        static int count;
+
         contdest() {
-            // count = 0;
             cout << "\nObject Created = " << count++;
         }
 
@@ -17,6 +15,8 @@ class contdest {
             cout <<"\nObject Destroyed = " << --count;
         }
 };
+
+int contdest::count = 0;
 
 int main() {
     cout << "\nMain Block\n";
