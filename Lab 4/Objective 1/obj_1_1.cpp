@@ -1,0 +1,1 @@
+// Modify obj 1 program using statis variable

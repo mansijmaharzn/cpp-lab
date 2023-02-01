@@ -9,9 +9,7 @@ class Complex {
     public:  
         int real, imaginary;
 
-        Complex() {
-            real=0; imaginary=0;
-        }
+        Complex() {}
 
         // parameterized constructor
         Complex(int r, int i)  {  
