@@ -7,7 +7,7 @@ git clone https://github.com/mansijmaharzn/cpp-lab
 
 ### Updating
 ```
-git pull
+git pull upstream main
 ```
 
 > Send a PR to contribute 🤪
