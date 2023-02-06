@@ -18,7 +18,7 @@ class Complex {
         }
 
         // Copy constructor
-        Complex(const Complex& p1){
+        Complex(Complex& p1){
             real = p1.real;
             imaginary = p1.imaginary;
         }
