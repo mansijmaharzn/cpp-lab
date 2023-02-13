@@ -30,7 +30,7 @@ int main() {
 	i1.display();
 
 	// Using the pre-increment operator
-	Integer i2 = ++i1;
+	++i1;
 
 	cout << "After increment: " << endl;
 	i1.display();
