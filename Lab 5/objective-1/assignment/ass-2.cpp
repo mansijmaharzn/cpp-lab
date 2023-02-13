@@ -2,10 +2,8 @@
 WAP to overload ++ increment operator
 */
 
-// C++ program to demonstrate
-// prefix increment operator overloading
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 class Integer {
@@ -35,7 +33,6 @@ int main() {
 	Integer i2 = ++i1;
 
 	cout << "After increment: " << endl;
-	cout << "i1: ";
 	i1.display();
 
     return 0;
