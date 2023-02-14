@@ -1,5 +1,5 @@
 /*
-Find S1 + S2 where operators has usual meaning and S1 And S2 are valid strings.
+Find S1 += S2 where operators has usual meaning and S1 And S2 are valid strings.
 */
 
 #include<iostream>
