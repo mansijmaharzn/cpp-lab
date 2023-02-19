@@ -1,13 +1,12 @@
-#include<iostream.h>
-#include<conio.h>
-#include<math.h>
+#include<iostream>
+#include<cmath>
+using namespace std;
+
 class shape {
     public:
-    virtual float area()    //virtual function
-    { }
+    virtual float area() {} //virtual function
     virtual float perimeter()=0; //pure virtual function
     virtual void getdata()=0; //pure virtual function
-
 };
 
 class rectangle:public shape{
@@ -18,14 +17,13 @@ class rectangle:public shape{
         cin >> l;
         cout << "Breadth=";
         cin >> b;
-            }
-            float area(){
-                return(l*b);
-            }
-            float perimeter(){
-                return(2*(l+b));
-            }
-
+    }
+    float area(){
+        return(l*b);
+    }
+    float perimeter(){
+        return(2*(l+b));
+    }
 };
 class triangle:public shape{
     float a, b, c;
@@ -41,13 +39,12 @@ class triangle:public shape{
         return(A);
 
     }
-
     float perimeter(){
-    return(a+b+c);
+        return(a+b+c);
     }
 };
-void main(){
-    clrscr();
+
+int main(){
     shape *ps;
     rectangle r;
     triangle t;
@@ -56,9 +53,10 @@ void main(){
     ps->getdata();
     cout << "\nArea of rectangle is " << ps->area();
     cout << "\nPerimeter of rectangle is " << ps->perimeter();
-    ps = &t. //shape pointer points to a triangle object
+    ps = &t; //shape pointer points to a triangle object
     ps->getdata();
     cout << "\nArea of triangle is " << ps->area();
     cout << "\nPerimeter of triangle is " << ps->perimeter();
-    getch();
+
+    return 0;
 }
