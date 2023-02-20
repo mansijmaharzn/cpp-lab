@@ -10,7 +10,7 @@ using namespace std;
 // Base class
 class Student {
 public:
-    void display() {
+    virtual void display() {
         cout << "Student" << endl;
     }
 };
@@ -18,21 +18,21 @@ public:
 // Derived classes
 class Engineering : public Student {
 public:
-    void display() {
+    void display() override {
         cout << "Engineering Student" << endl;
     }
 };
 
 class Science : public Student {
 public:
-    void display() {
+    void display() override {
         cout << "Science Student" << endl;
     }
 };
 
 class Medical : public Student {
 public:
-    void display() {
+    void display() override {
         cout << "Medical Student" << endl;
     }
 };
