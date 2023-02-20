@@ -50,10 +50,5 @@ int main() {
         students[i]->display();
     }
 
-    // Free memory
-    for (int i = 0; i < SIZE; i++) {
-        delete students[i];
-    }
-
     return 0;
 }
