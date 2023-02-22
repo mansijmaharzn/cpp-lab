@@ -1,6 +1,7 @@
 // Objective #3
 #include<iostream>
 #include<fstream>
+using namespace std;
 
 class book {
     char title[10], subject[10], author[10];
@@ -16,8 +17,8 @@ class book {
 
         void putdata() {
             cout << "Title: " << title;
-            cout << "Subject: " << subject;
-            cout << "Author: " << author;
+            cout << "\nSubject: " << subject;
+            cout << "\nAuthor: " << author;
         }
 };
 
@@ -31,7 +32,12 @@ class book_file {
 
         void appendbooks(book b) {
             ofstream outfile;
-            outfile.open(file_name, ios::app || ios::in);
+            outfile.open(file_name, ios::app | ios::in);
+            /*
+                | (bitwise OR operator) is used to combine the two ios flags,
+                meaning that passing ios::in | ios::out to the constructor
+                of std::fstream enables both input and output for the stream.
+            */
             outfile.write((char*)&b, sizeof(book)); // pointer to data of type char
             outfile.close();
         }
@@ -51,5 +57,11 @@ int main() {
     book_file f;
     book b, c;
 
-    b.getdata
+    b.getdata();
+    f.appendbooks(b);
+
+    c = f.getbook();
+    c.putdata();
+
+    return 0;
 }
