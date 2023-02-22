@@ -73,7 +73,7 @@ int main() {
     Student b, c;
     char query[5];
 
-    for (int i=0; i<2; i++) {
+    for (int i=0; i<10; i++) {
         b.setData();
         f.addStudent(b);
     }
