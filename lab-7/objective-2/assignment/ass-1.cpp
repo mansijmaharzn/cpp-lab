@@ -1,4 +1,6 @@
 // Copy the source file into destination file.
+
+// NOTE: You need to have "source.txt" with some texts in the same dir as this file in order to work :)
 #include<iostream>
 #include<fstream>
 using namespace std;
