@@ -29,12 +29,12 @@ class Student {
 };
 
 int main() {
-    Student stud[3]; // array of 5 Student objects
+    Student stud[5]; // array of 5 Student objects
     fstream file;
 
     // getting student infos from the user
     file.open("students.txt", ios::out);
-    for (int i=0; i<3; i++) {
+    for (int i=0; i<5; i++) {
         stud[i].setStud();
         file.write((char*)&stud[i], sizeof(stud[i]));
     }
@@ -42,7 +42,7 @@ int main() {
 
     // getting student infos from the file
     file.open("students.txt", ios::in);
-    for (int i=0; i<3; i++) {
+    for (int i=0; i<5; i++) {
         file.read((char*)&stud[i], sizeof(stud[i]));
         stud[i].getStud();
     }
