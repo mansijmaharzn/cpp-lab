@@ -22,7 +22,7 @@ int main() {
     fout << r;
 
     fout.width(10);
-    fout << name << endl; // reading
+    fout << name << endl;
     fout.close();
 
     fout.seekg(0, ios::beg);
