@@ -36,14 +36,14 @@ int main() {
     file.open("students.txt", ios::out);
     for (int i=0; i<5; i++) {
         stud[i].setStud();
-        file.write((char*)&stud[i], sizeof(stud[i]));
+        file.write((char*)&stud[i], sizeof(Student));
     }
     file.close();
 
     // getting student infos from the file
     file.open("students.txt", ios::in);
     for (int i=0; i<5; i++) {
-        file.read((char*)&stud[i], sizeof(stud[i]));
+        file.read((char*)&stud[i], sizeof(Student));
         stud[i].getStud();
     }
     file.close();
