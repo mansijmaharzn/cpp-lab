@@ -42,7 +42,7 @@ int main() {
     MeterC mc;
     FeetI fi(5, 8);
 
-    mc = MeterC(fi);
+    mc = fi;
 
     mc.display();
 
