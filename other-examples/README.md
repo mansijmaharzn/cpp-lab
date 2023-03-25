@@ -82,5 +82,5 @@ void show(T a, T b) {
 // calling is done normally and variables can be passed of any dataType like float, int, char, etc
 ```
 ### Class Template
-[example](classTemplate.cpp)
+[example](classTemplate.cpp)  
 Just like Function Template but in class. Focus on object creation part!
