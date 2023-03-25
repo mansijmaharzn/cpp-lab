@@ -4,7 +4,7 @@
 ### Temperature Conversion
 ```
 (30°C x 1.8) + 32 = 86 °F
-(50°F - 32) x .5556 = 10 °C
+(5.0/9.0) * (50°F - 32.0) = 10 °C;
 ```
 
 ## Reversing
