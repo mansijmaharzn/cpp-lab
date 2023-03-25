@@ -7,6 +7,19 @@
 (5.0/9.0) * (50°F - 32.0) = 10 °C;
 ```
 
+### Add Two Times
+```
+(Time &obj1, Time &obj2) {
+    sec = obj1.sec + obj2.sec;
+    min = sec / 60;
+    sec = sec % 60;
+    min = min + obj1.min + obj2.min;
+    hr = min / 60;
+    min = min % 60;
+    hr = hr+obj1.hr + obj2.hr;
+}
+```
+
 ## Reversing
 ### Reverse Number
 [example](reverseNumber.cpp)
