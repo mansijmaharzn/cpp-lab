@@ -36,6 +36,9 @@ while(start < end) {
 ```
 
 ## Overloading
+### Function Overloading
+[examples](../lab-2)
+
 ### Operator Overloading
 [example](opOverloading.cpp)
 ```
@@ -67,3 +70,17 @@ IN -> main() {
     d3 = d1+d2;
 }
 ```
+
+## Templates
+### Function Template
+[example](functionTemplate.cpp)
+```
+template<class T> // T supports any type of datatype
+void show(T a, T b) {
+    cout << "a: " << a << "\tb: " << b << endl;
+}
+// calling is done normally and variables can be passed of any dataType like float, int, char, etc
+```
+### Class Template
+[example](classTemplate.cpp)
+Just like Function Template but in class. Focus on object creation part!
