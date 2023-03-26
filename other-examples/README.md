@@ -22,7 +22,7 @@
 
 ## Reversing
 ### Reverse Number
-[example](reverseNumber.cpp)
+[example](reversing/reverseNumber.cpp)
 ```
 int n, reverse=0, remainder;
 while (n != 0) {
@@ -35,7 +35,7 @@ while (n != 0) {
 
 
 ### Reverse Array
-[example](reverseArray.cpp)
+[example](reversing/reverseArray.cpp)
 ```
 int temp, start=0, end=5-1;
 while(start < end) {
@@ -53,7 +53,7 @@ while(start < end) {
 [examples](../lab-2)
 
 ### Operator Overloading
-[example](opOverloading.cpp)
+[example](overloading/opOverloading.cpp)
 ```
 In Class -> public:
 Distance operator+(Distance d1) {
@@ -68,7 +68,7 @@ IN -> main() {
 ```
 
 ### Operator Overloading Using Friend Function
-[example](opoverloadFriend.cpp)
+[example](overloading/opoverloadFriend.cpp)
 ```
 In Class -> friend Distance operator+(Distance, Distance);
 
@@ -86,7 +86,7 @@ IN -> main() {
 
 ## Templates
 ### Function Template
-[example](functionTemplate.cpp)
+[example](templates/functionTemplate.cpp)
 ```
 template<class T> // T supports any type of datatype
 void show(T a, T b) {
@@ -95,5 +95,5 @@ void show(T a, T b) {
 // calling is done normally and variables can be passed of any dataType like float, int, char, etc
 ```
 ### Class Template
-[example](classTemplate.cpp)  
+[example](templates/classTemplate.cpp)  
 Just like Function Template but in class. Focus on object creation part!
