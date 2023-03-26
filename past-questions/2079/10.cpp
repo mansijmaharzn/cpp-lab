@@ -1,0 +1,1 @@
+// Write a program for illustrating use of new and delete.

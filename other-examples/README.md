@@ -1,5 +1,18 @@
 # Points for some programs
 
+## Constructor
+[example](../past-questions/2079/3.cpp)
+### Copy Constructor
+```
+// Defination
+ConDes(ConDes &v) { // <- remember address sign (&)
+    val = v.val;
+}
+// calling
+ConDes c2(5), c3;
+c3 = c2;
+```
+
 ## Conversion Formulas
 ### Temperature Conversion
 ```

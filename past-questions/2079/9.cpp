@@ -1,0 +1,1 @@
+// Write a program to illustrate the use of seekg() and tellg().
