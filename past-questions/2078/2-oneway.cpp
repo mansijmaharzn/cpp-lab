@@ -15,9 +15,9 @@ using namespace std;
 
 // destination class
 class FeetI {
-    double feet, inch;
+    int feet, inch;
     public:
-        FeetI(double f=0, double i=0) {
+        FeetI(int f=0, int i=0) {
             feet=f; inch=i;
         }
 
