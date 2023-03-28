@@ -7,43 +7,67 @@ Write a program according to the specification given below:
 - Create array of objects to store data of 5 accounts and read and display values of each object
 */
 
-// NOT SOLVED YET!!!
-
-#include<iostream>
+#include <iostream>
 using namespace std;
+#define SIZE 5
 
+class Account{
 
-class Account {
-    int accNo, balance;
     public:
-        static double minBalance;
+        string acc_no;
+        int balance;
 
-        void getData() {
-            cout << "Enter accNo, balance: ";
-            cin >> accNo >> balance;
+        //static data member
+        static int min_balance;
+
+        //read the data
+        void readData(){
+            cout << "\nEnter Account No: ";
+            cin >> acc_no;
+
+            cout << "Enter balance: ";
+            cin >> balance;
         }
 
-        void putData() {
-            cout << "Acc No: " << accNo << "\nBalance: " << balance << endl;
+        //print data
+        void displayData(){
+            cout << "Account No: " << acc_no << endl;
+            cout << "Balance: " << balance << endl;
         }
 
-        static void putMinBalance() {
-            cout << "Minimum Balance: " << minBalance << endl;
+        //read minimum balance
+        static void readMinBalance(){
+            cout << "\nEnter Minimum Balance: ";
+            cin >> min_balance;
+        }
+
+        //static function to print static member
+        static void dispMinBalance(){
+            cout << "Minimum Balance: " << min_balance << endl << endl;
         }
 };
 
+//Initialize static data member
+int Account::min_balance = 0;
 
-int main() {
-    Account acc[5];
+int main(){
 
-    for (int i=0; i<5; i++) {
-        cout << "Enter for Account " << i+1 << endl;
-        acc[i].getData();
+    Account acc[SIZE];
+    int i = 0;
+
+    //Read the account data
+    Account::readMinBalance();
+
+    cout << "\n=======Enter Account Data=======" << endl;
+    for(i = 0; i < SIZE; i++){
+        acc[i].readData();
     }
 
-    for (int i=0; i<5; i++) {
-        cout << "Detail of Account " << i+1 << endl;
-        acc[i].putData();
+    //print the account data
+    cout << "\n=======Account Details=======\n" << endl;
+    for(i = 0; i < SIZE; i++){
+        acc[i].displayData();
+        acc[i].dispMinBalance();
     }
 
     return 0;
