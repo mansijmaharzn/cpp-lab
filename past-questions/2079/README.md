@@ -1,4 +1,4 @@
 # Remaining
-- [ ] 1.cpp (really don't know what next and what is question expecting)
+- [ ] 1.cpp (not ure if it is the expected answer ;)
 - [ ] 9.cpp
 - [ ] 10.cpp

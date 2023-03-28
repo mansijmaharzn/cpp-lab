@@ -7,57 +7,77 @@ Each of the three classes should have getdata() method to get their data from us
 The classes should have putdata() method to display the data.
 Create instance of the class book in main.
 */
+
 #include<iostream>
 using namespace std;
 
-
 class author {
-    char name[10], qualification[10];
     public:
-        void getData() {
-            cout << "Enter name and qualification: ";
-            cin >> name >> qualification;
-        }
 
-        void putData() {
-            cout << "Name: " << name << endl;
-            cout << "Qualification: " << qualification << endl;
+        string name, qualification;
+
+        void getdata() {
+            cout << "\nEnter Author Name           :   ";
+            getline(cin, name);
+
+            cout << "Enter Author Qualification  :   ";
+            getline(cin, qualification);
         }
 };
 
 class publication {
-    char pname[10];
     public:
-        void getData() {
-            cout << "Enter pname: ";
-            cin >> pname;
-        }
 
-        void putData() {
-            cout << "P-Name: " << pname << endl;
+        string pname;
+
+        void getdata() {
+            cout << "\nEnter Publication Name      :   ";
+            getline(cin, pname);
         }
 };
 
-class book : public author, public publication {
-    char title[10];
-    double price;
+
+class book: public author, public publication {
     public:
-        void getData() {
-            cout << "Enter title and price: ";
-            cin >> title >> price;
+
+        string title;
+        float price;
+
+        // Function overriding
+        void getdata() {
+            cout << "\nEnter Book Title            :   ";
+            getline(cin, title);
+
+            cout << "Enter Book price            :   ";
+            cin >> price;
         }
 
-        void putData() {
-            cout << "Title: " << title << endl;
-            cout << "Price: " << price << endl;
+        void putData(){
+            cout << "\n\n========== BOOK INFO ==========" << endl;
+            cout << "\nBook Author               :   " << name;
+            cout << "\nBook Author Qualification :   " << qualification;
+
+            cout << "\nBook Publication          :   " << pname;
+
+            cout << "\nBook Name                 :   " << title;
+            cout << "\nBook Price                :   Rs." << price;
         }
 };
 
 
 int main() {
-    book b;
 
-    b.getData();
+    // Created an object of class book
+    book obj;
+
+    //read the data each class by scope resolution
+    obj.author::getdata();
+    obj.publication::getdata();
+
+    obj.getdata();
+
+    //display result
+    obj.putData();
 
     return 0;
 }
