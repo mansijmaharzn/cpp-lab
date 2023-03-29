@@ -17,7 +17,7 @@ class ConDes {
             val = v;
         }
 
-        ConDes(ConDes &v) { // copy constructor
+        ConDes(ConDes &v) { // copy constructor # NOTE: remember address operator
             val = v.val;
         }
 
