@@ -11,6 +11,15 @@ ConDes(ConDes &v) { // <- remember address sign (&)
 // calling
 ConDes c2(5), c3;
 c3 = c2;
+
+OR
+ConDes c2(5);
+ConDes c3(c2);
+/*
+Can't do
+ConDes c2(5), c3;
+c3(c2);
+*/
 ```
 
 ## Conversion Formulas
