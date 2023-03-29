@@ -8,52 +8,54 @@ The classes should have putdata() method to display the data.
 Create instance of the class book in main.
 */
 
+/*
+Aggregation:
+    Aggregation in C++ (commonly called as a has-a relationship), is a process in which
+    one class defines a second class as an entity reference. It is a method of reusability
+    of classes. In the simplest possible terms, it is when a class has an object of the other class.
+*/
+
 #include<iostream>
 using namespace std;
 
 class author {
     public:
-
-        string name, qualification;
+        char name[20], qualification[20];
 
         void getdata() {
-            cout << "\nEnter Author Name           :   ";
-            getline(cin, name);
+            cout << "\nEnter Author Name: ";
+            cin >> name;
 
-            cout << "Enter Author Qualification  :   ";
-            getline(cin, qualification);
+            cout << "Enter Author Qualification: ";
+            cin >> qualification;
         }
 };
 
 class publication {
     public:
-
-        string pname;
+        char pname[20];
 
         void getdata() {
-            cout << "\nEnter Publication Name      :   ";
-            getline(cin, pname);
+            cout << "Enter Publication Name: ";
+            cin >> pname;
         }
 };
 
 
 class book: public author, public publication {
     public:
-
-        string title;
+        char title[20];
         float price;
 
-        // Function overriding
         void getdata() {
-            cout << "\nEnter Book Title            :   ";
-            getline(cin, title);
+            cout << "Enter Book Title: ";
+            cin >> title;
 
-            cout << "Enter Book price            :   ";
+            cout << "Enter Book price: ";
             cin >> price;
         }
 
         void putData(){
-            cout << "\n\n========== BOOK INFO ==========" << endl;
             cout << "\nBook Author               :   " << name;
             cout << "\nBook Author Qualification :   " << qualification;
 
@@ -66,14 +68,14 @@ class book: public author, public publication {
 
 
 int main() {
-
     // Created an object of class book
     book obj;
 
-    //read the data each class by scope resolution
+    // read the data for each class by scope resolution
     obj.author::getdata();
     obj.publication::getdata();
 
+    // read the data for class book itself
     obj.getdata();
 
     //display result
