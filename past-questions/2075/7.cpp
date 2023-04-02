@@ -14,7 +14,8 @@ class Area{
             area = i.area;
         }
         Area(Area &i, bool add) { //4
-            area = i.area + 5;
+            if (add)
+                area = i.area + 5;
         }
 
         void display() {
