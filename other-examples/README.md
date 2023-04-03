@@ -42,6 +42,16 @@ c3(c2);
 }
 ```
 
+### Add two Distance(feet and inch) objects
+```
+int f = feet + d.feet;
+int i = inch + d.inch;
+if (i >= 12) {
+    f += 1;
+    i -= 12;
+}
+```
+
 ## Reversing
 ### Reverse Number
 [example](reversing/reverseNumber.cpp)
