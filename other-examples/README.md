@@ -52,6 +52,14 @@ if (i >= 12) {
 }
 ```
 
+### Meter Centimeter to Inch and Feet
+```
+double totalCenti = (100*meter) + centi;
+int inch = totalCenti / 2.54; // <- formula
+int feet = inch / 12; // <- formula
+inch = inch - (12*4);
+```
+
 ## Reversing
 ### Reverse Number
 [example](reversing/reverseNumber.cpp)
