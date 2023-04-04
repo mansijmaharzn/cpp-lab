@@ -14,7 +14,7 @@ int main () {
     try {  
         k = division(i, j);  
         cout << k << endl;  
-    }catch (const char* e) {  
+    }catch (char* e) {  
         cerr << e << endl;  
     }  
     return 0;  
