@@ -29,7 +29,7 @@ int main() {
     ifstream input("person.dat", ios::binary);
     if (input) {
         input.read((char*)&p2, sizeof(Person));
-        cout << "Name: " << p2.id << endl;
+        cout << "Id: " << p2.id << endl;
         cout << "Age: " << p2.age << endl;
     }
     input.close();
