@@ -12,11 +12,9 @@ using namespace std;
 #define SIZE 5
 
 class Account{
-
+    int acc_no;
+    int balance;
     public:
-        string acc_no;
-        int balance;
-
         //static data member
         static int min_balance;
 
@@ -67,7 +65,7 @@ int main(){
     cout << "\n=======Account Details=======\n" << endl;
     for(i = 0; i < SIZE; i++){
         acc[i].displayData();
-        acc[i].dispMinBalance();
+        Account::dispMinBalance();
     }
 
     return 0;
